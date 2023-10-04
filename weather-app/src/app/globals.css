@@ -3,6 +3,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    background-image: url("https://images.pexels.com/photos/8822081/pexels-photo-8822081.jpeg?cs=srgb&dl=pexels-castorly-stock-8822081.jpg&fm=jpg&_gl=1*1mvs1l9*_ga*MTY5NDYwMDY4Mi4xNjk2NDI2Njcw*_ga_8JE65Q40S6*MTY5NjQyNjY2OS4xLjAuMTY5NjQyNjY2OS4wLjAuMA..");
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,6 +24,7 @@ body {
   h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: white
   }
   
   input[type="text"] {
@@ -61,20 +64,18 @@ body {
   .weather-description {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: white
   }
   
   .weather-data {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: white
   }
-  
-  /* Icon für bewölktes Wetter */
-  .cloud-icon {
-    background-image: url("https://icons8.com/icon/8EUmYhfLPTCF/sun")
-  }
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  color: white;
   margin: 0;
   padding: 0;
   display: flex;
@@ -82,6 +83,17 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.weather-container {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    max-height: 250px;
+  }
 
 .container {
   text-align: center;
@@ -147,20 +159,12 @@ button:hover {
 
 /* Icon für sonniges Wetter */
 .sun-icon {
-  background-image: url('https://icons8.com/icon/8EUmYhfLPTCF/sun');
+  background-image: url('https://www.freepik.com/icon/sun_869869#fromView=keyword&term=Weather&page=1&position=1');
 }
 
 /* Icon für regnerisches Wetter */
 .rain-icon {
   background-image: url('https://icons8.com/icon/8EUmYhfLPTCF/sun');
 }  
-  /* Icon für sonniges Wetter */
-  .sun-icon {
-    background-image: url('https://icon-icons.com/de/download/90785/PNG/512/');
-  }
-  
-  /* Icon für regnerisches Wetter */
-  .rain-icon {
-    background-image: url("https://icons8.com/icon/8EUmYhfLPTCF/sun");
-  }
+
   

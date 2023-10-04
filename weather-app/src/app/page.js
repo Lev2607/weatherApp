@@ -24,7 +24,6 @@ export default function Home() {
         humidity: response.data.main.humidity,
       };
 
-      // Setzen Sie die abgerufenen Wetterdaten im State, um sie auf der Website anzuzeigen
       setWeatherData(weatherData);
     } catch (error) {
       console.error('Fehler beim Abrufen der Wetterdaten:', error);
@@ -40,15 +39,15 @@ export default function Home() {
         value={location}
         onChange={handleLocationChange}
       />
-      <button onClick={fetchWeatherData}>Wetter abrufen</button>
+      <button onClick={fetchWeatherData}>Search</button>
 
-      {/* Hier zeigen wir die abgerufenen Wetterdaten an */}
       {weatherData && (
-        <div>
-          <h2>Wetter in {location}</h2>
-          <p>Temperatur: {weatherData.temperature}°C</p>
-          <p>Wetter: {weatherData.weatherDescription}</p>
-          <p>Luftfeuchtigkeit: {weatherData.humidity}%</p>
+        <div className="weather-container">
+          <h2 className="weather-title"> {location}</h2>
+          <div className="sun-icon"></div>
+          <p className="weather-data">Temperatur: {weatherData.temperature}°C</p>
+          <p className="weather-data">Wetterbeschreibung: {weatherData.weatherDescription}</p>
+          <p className="weather-data">Luftfeuchtigkeit: {weatherData.humidity}%</p>     
         </div>
       )}
     </div>
