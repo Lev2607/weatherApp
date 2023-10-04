@@ -33,12 +33,12 @@ export default function Home() {
   return (
     <div>
       <h1>Wetter-App</h1>
-      <input
+      <input>
         type="text"
         placeholder="Ort eingeben"
         value={location}
         onChange={handleLocationChange}
-      />
+      </input>
       <button onClick={fetchWeatherData}>Search</button>
 
       {weatherData && (
